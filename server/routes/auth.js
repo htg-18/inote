@@ -44,6 +44,7 @@ router.post('/createuser', [
         res.status(500).send('Internal Server Error');
     }
 });
+
 //router for login
 router.post("/login",[
     body('email').isEmail(),
